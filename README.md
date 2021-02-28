@@ -8,6 +8,7 @@ Toolkit includes:
 - [eslint](https://eslint.org/)
 - [typescript](https://www.typescriptlang.org/)
 - [babel](https://babeljs.io/)
+- [webpack](https://webpack.js.org/)
 
 ...along with default configuration, extensions, and plugins for each.
 
@@ -75,6 +76,18 @@ module.exports = {
 
 For more, including how to provide overrides, see the [tsconfig documentation](https://www.typescriptlang.org/tsconfig#extends).
 
+### webpack
+
+`webpack.config.js`:
+
+```js
+var defaults = require('@pcattori/react-toolkit').webpack()
+module.exports = {
+  ...defaults,
+  // overrides go here
+}
+```
+
 ## NPM scripts
 
 Add any of the following to your `package.json`:
@@ -86,7 +99,9 @@ Add any of the following to your `package.json`:
     "format:fix": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build": "webpack --mode='production'",
+    "start:dev": "webpack serve --mode='development' --host 0.0.0.0"
   }
 }
 ```
