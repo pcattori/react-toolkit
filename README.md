@@ -48,3 +48,31 @@ module.exports = {
   // overrides go here
 }
 ```
+
+### typescript
+
+`tsconfig.json`:
+
+```json
+{
+  "extends": "./node_modules/@pcattori/react-toolkit/src/tsconfig.json",
+  "include": ["./src/**/*"]
+}
+```
+
+For more, including how to provide overrides, see the [tsconfig documentation](https://www.typescriptlang.org/tsconfig#extends).
+
+## NPM scripts
+
+Add any of the following to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+}
+```
