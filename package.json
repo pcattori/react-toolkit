@@ -10,6 +10,10 @@
   "license": "MIT",
   "author": "Pedro Cattori <pcattori@gmail.com>",
   "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
   "dependencies": {
     "prettier": "^2.2.1"
   }
