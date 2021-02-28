@@ -1,4 +1,4 @@
-const defaults = require('./src/prettier')()
+const defaults = require('./src').prettier()
 
 module.exports = {
   ...defaults,

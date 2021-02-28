@@ -5,6 +5,8 @@ Personal toolkit for React apps.
 Toolkit includes:
 
 - [prettier](https://prettier.io/)
+- [eslint](https://eslint.org/)
+- [typescript](https://www.typescriptlang.org/)
 
 ...along with default configuration, extensions, and plugins for each.
 
@@ -29,6 +31,18 @@ npm install -D @pcattori/react-toolkit
 
 ```js
 var defaults = require('@pcattori/react-toolkit').prettier()
+module.exports = {
+  ...defaults,
+  // overrides go here
+}
+```
+
+### eslint
+
+`.eslintrc.js`:
+
+```js
+var defaults = require('@pcattori/react-toolkit').eslint()
 module.exports = {
   ...defaults,
   // overrides go here
