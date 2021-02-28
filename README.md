@@ -7,6 +7,7 @@ Toolkit includes:
 - [prettier](https://prettier.io/)
 - [eslint](https://eslint.org/)
 - [typescript](https://www.typescriptlang.org/)
+- [babel](https://babeljs.io/)
 
 ...along with default configuration, extensions, and plugins for each.
 
@@ -57,6 +58,18 @@ module.exports = {
 {
   "extends": "./node_modules/@pcattori/react-toolkit/src/tsconfig.json",
   "include": ["./src/**/*"]
+}
+```
+
+### babel
+
+`.babelrc.js`:
+
+```js
+var defaults = require('@pcattori/react-toolkit').babel()
+module.exports = {
+  ...defaults,
+  // overrides go here
 }
 ```
 
