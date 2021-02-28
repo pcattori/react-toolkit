@@ -1,5 +1,5 @@
 /**
- * Generates a basic `eslint` configuration.
+ * Generates a basic `eslint` configuration
  */
 module.exports = () => ({
   env: {
