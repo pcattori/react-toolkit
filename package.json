@@ -9,6 +9,9 @@
   "repository": "github:pcattori/react-toolkit",
   "license": "MIT",
   "author": "Pedro Cattori <pcattori@gmail.com>",
+  "files": [
+    "src/**/*"
+  ],
   "publishConfig": {
     "access": "public"
   },
