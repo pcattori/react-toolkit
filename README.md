@@ -48,3 +48,18 @@ module.exports = {
   // overrides go here
 }
 ```
+
+## NPM scripts
+
+Add any of the following to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+}
+```
